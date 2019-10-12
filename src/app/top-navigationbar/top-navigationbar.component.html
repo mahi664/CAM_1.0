@@ -1,13 +1,21 @@
 <nav class="navbar navbar-dark bg-primary1">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
+    (click)="handleMenuBehavior()" *ngIf="!isCollapsed && authenticationService.isUserLogedIn()">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
+    (click)="handleMenuBehavior()" *ngIf="isCollapsed && authenticationService.isUserLogedIn()">
+    <span class="oi oi-arrow-thick-left" style="font-size: 30px;"></span>
+  </button>
+  
+  <a class="navbar-brand" href="#" style="margin-left: -850px;">Dynamic Developers(CAM)</a>
 
   <div class="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="navbar-brand" href="#">Dynamic Developers(CAM)</a>
+        <a class="navbar-brand" href="#">Super Admin</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="#">Link</a>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationServiceService } from '../service/authentication-service.service';
 
 @Component({
   selector: 'app-top-navigationbar',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavigationbarComponent implements OnInit {
 
-  constructor() { }
+  isCollapsed=false
+  constructor(
+    private authenticationService: AuthenticationServiceService
+  ) { }
 
   ngOnInit() {
+  }
+
+  handleMenuBehavior(){
+    this.isCollapsed = !this.isCollapsed
+    console.log(this.isCollapsed);
   }
 
 }
