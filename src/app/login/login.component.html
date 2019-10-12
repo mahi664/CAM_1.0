@@ -1,23 +1,25 @@
 <h3 class="login-form-heading">Student Login</h3>
 <div class="container">
   <div class="login-form-container">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Username <span class="required-field">*</span></label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-        placeholder="Please Enter Username" required>
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password <span class="required-field">*</span></label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please enter Password"
-        required>
-    </div>
-    <!-- uncomment following block of statement if wants to add facility for saving usernaem and password -->
-    <!-- <div class="form-check">
+      <form (ngSubmit)="Login()">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Username <span class="required-field">*</span></label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Please Enter Username" [(ngModel)]="username" name="username" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password <span class="required-field">*</span></label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please enter Password"
+        [(ngModel)]="password" name="password" required>
+      </div>
+      <!-- uncomment following block of statement if wants to add facility for saving usernaem and password -->
+      <!-- <div class="form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div> -->
-    <button type="submit" class="btn btn-navy-blue">Login &nbsp;<span class="oi oi-location" title="location"
-        aria-hidden="true"></span></button>
+      <button type="submit" class="btn btn-navy-blue">Login &nbsp;<span class="oi oi-location" title="location"
+          aria-hidden="true"></span></button>
+    </form>
   </div>
 </div>
