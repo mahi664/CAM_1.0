@@ -9,6 +9,7 @@ import { TopNavigationbarComponent } from './top-navigationbar/top-navigationbar
 import { SideNavigationbarComponent } from './side-navigationbar/side-navigationbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

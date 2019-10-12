@@ -2,8 +2,9 @@
 <div class="container-fluid">
   <div class="row">
   <app-side-navigationbar></app-side-navigationbar>
-  <div>
-    <table class="table table-responsive">
+  <div *ngIf="data">
+    {{data}}
+    <!-- <table class="table table-responsive">
       <thead>
         <th>Sr.No.</th>
         <th>Teacher Name</th>
@@ -22,7 +23,7 @@
         <td>maheshghuge@gmail.com</td>
         <td>Allumina</td>
       </tbody>
-    </table>
+    </table> -->
   </div>
 </div>
 </div>

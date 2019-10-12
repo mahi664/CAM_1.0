@@ -17,8 +17,7 @@ export class TopNavigationbarComponent implements OnInit {
   }
 
   handleMenuBehavior(){
-    this.isCollapsed = !this.isCollapsed
-    console.log(this.isCollapsed);
+    this.authenticationService.isSideNavExpanded()
   }
 
 }

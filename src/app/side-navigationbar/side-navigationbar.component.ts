@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationServiceService } from '../service/authentication-service.service';
 
 @Component({
   selector: 'app-side-navigationbar',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavigationbarComponent implements OnInit {
 
-  constructor() { }
+  isCollapsed=true
+  constructor(
+    private authenticationService: AuthenticationServiceService
+  ) { }
 
   ngOnInit() {
   }

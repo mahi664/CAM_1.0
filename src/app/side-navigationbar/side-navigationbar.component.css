@@ -1,16 +1,14 @@
 #navbarSupportedContent{
     position: relative;
     left: 0;
-
 }
 .oi{
-    font-size: 25px;
+    font-size: 28px;
 }
 .card{
     background-color: rgba(43,43,115);
     margin-bottom: 8%;
     width: 100%;
-    height: 80px;
     text-align: center;
     position: relative;
 
@@ -18,6 +16,11 @@
 .bg-primary1{
     background-color: rgba(43,43,115);
 }
+
+p{
+    font-size: 10px;
+}
+
 .nav-link{
     color: white;
 }
