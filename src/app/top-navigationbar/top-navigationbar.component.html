@@ -1,12 +1,12 @@
 <nav class="navbar navbar-dark bg-primary1">
   <button class="navbar-toggler" type="button"  data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
-    (click)="handleMenuBehavior()" *ngIf="!authenticationService.isCollapsed && authenticationService.isUserLogedIn()">
+    (click)="handleMenuBehavior()" *ngIf="authenticationService.isCollapsed && authenticationService.isUserLogedIn()">
     <span class="oi oi-menu" style="font-size: 20px;"></span>
   </button>
   <button class="navbar-toggler" type="button" data-toggle="collapse" 
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
-    (click)="handleMenuBehavior()" *ngIf="authenticationService.isCollapsed && authenticationService.isUserLogedIn()">
+    (click)="handleMenuBehavior()" *ngIf="!authenticationService.isCollapsed && authenticationService.isUserLogedIn()">
     <span class="oi oi-arrow-thick-left" style="font-size: 20px;"></span>
   </button>
   

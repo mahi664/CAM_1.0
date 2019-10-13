@@ -10,6 +10,7 @@ import { SideNavigationbarComponent } from './side-navigationbar/side-navigation
 import { FooterComponent } from './footer/footer.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     TopNavigationbarComponent,
     SideNavigationbarComponent,
     FooterComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

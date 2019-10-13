@@ -1,6 +1,7 @@
 #navbarSupportedContent{
     position: relative;
     left: 0;
+    height: 800px;
 }
 .oi{
     font-size: 28px;
